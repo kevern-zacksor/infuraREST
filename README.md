@@ -32,4 +32,4 @@ Creating and using an infura type:
     remote_node = inf.INFURA( _project_id, _project_secret )
     print("Current Block Number : {}".format( remote_node.get_block_number() ))    
 
-***Note***  You may also specify the network you would like to gather information on through the node. This can be done by specifying the ** _network ** parameter in the INFURA constructor.
+***Note***  You may also specify the network you would like to gather information on through the node. This can be done by specifying the **_network** parameter in the INFURA constructor.
