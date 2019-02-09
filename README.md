@@ -15,7 +15,7 @@ After the above two steps have been successfully taken, migrate to your project 
 ## infura.py  
 This is the client side REST code. Implemented here are the JSON-RPC known to an ETHEREUM node. On a successful return, the data requested can be found in the key result in the returning dictionary. If an error occurs, the results tag will not be shown in the returned requests object but replaced with an error tag.  
 
-For more documentation on functions and their params I suggest taking a closer look infuras documentation page located  [here](https://infura.io/docs).
+For more documentation on functions and their params I suggest taking a closer look at the docs page [here](https://infura.io/docs).
 
 ## test_infura.py
 A simple unit test calling all the functions (with the exception of **eth_sendRawTransaction** and **eth_submitWork**) in the file **infura.py**.
