@@ -1,12 +1,9 @@
 """
-@Description : Client side python api implementation for infura server. The class blueprints infura typed 
-               objects extending the flexibility of clients connecting to infura.io wanting to access 
-               Ethereum network/node information. Objects of infura types will require pub.priv keys to 
-               be passed during instantiation. Currently there is no exceptions class, this will change 
-	       shortly.
-
-@Modified    : 08/12/2018
-@Author      : a.t 
+@Description : Client side python api implementation for infura server. The class defines infura  
+               typed objects allowing access to Ethereums network via infura. Infura types will 
+               require public and private keys during instantiation. Currently no exceptions 
+               class exists, this will change shortly.
+@Author      : k.z
 """
 import requests 
 import time
@@ -37,7 +34,7 @@ class INFURA(object):
     #@Description: Forward facing caller. This function sanitizes outgoing and
     #              handles errors in returns (tbd).  
     #@Parameters :
-    # _method      [ str ] The name of the JSON RPC we wish to evoke. 
+    # _method      [ str ] The name of the JSON RPC method. 
     # _params      [ dict] The methods parameter counterparties. 
     #@Return     :
     # _request     Requests object. 
@@ -87,7 +84,7 @@ class INFURA(object):
     #@Parameters : None 
     #@Return     :  
     # jsonrpc      [ str ] Version of RPC. 
-    # id	       [ int ] ...
+    # id	   [ int ] ...
     # result       [ hex ] hex code of an integer rep. current block.
     def get_block_number( self ):
         _rtn = self.api_call("eth_blockNumber",[])
@@ -138,7 +135,7 @@ class INFURA(object):
     #@Parameters :
     #   _tx_hash   [ str ]  32 bytes hash of a transaction
     #@Return     :
-    # tx         [ dict] tx object, or null when no tx was found
+    # tx         [ dict  ] tx object, or null when no tx was found
     #   hash       [ str ] 32 Bytes hash of the transaction.
     #   nonce      [ str ] the number of txs made by the sender prior to this one.
     #   blockHash  [ str ] 32 Bytes hash of the block where this tx was in. null when pending.
