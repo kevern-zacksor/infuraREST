@@ -1,9 +1,9 @@
 """
-@Description : Client side pythong api implementation for infura server. The class blueprints infura typed 
-               objects extending the flexability of clients connecting to infura.io wanting to access 
-               Ethereum network/node information. Objects of iunfura types will reequire pub.priv keys to 
-               be passed during instantiation. Currently there is no excepstions class, this will change 
-	           shortly. 
+@Description : Client side python api implementation for infura server. The class blueprints infura typed 
+               objects extending the flexibility of clients connecting to infura.io wanting to access 
+               Ethereum network/node information. Objects of infura types will require pub.priv keys to 
+               be passed during instantiation. Currently there is no exceptions class, this will change 
+	       shortly.
 
 @Modified    : 08/12/2018
 @Author      : a.t 
